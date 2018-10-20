@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Menu.master.cs" Inherits="Employee_Training.Menu1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+           <asp:ContentPlaceHolder ID="Title" runat="server">
+    </asp:ContentPlaceHolder>
+    </title>
+     <link href="CSS/Menu.css" rel="stylesheet" />
+<%--    <script src="JS/Menu.js"></script>--%>
+    <link href="CSS/TextBox.css" rel="stylesheet" />
+    <link href="CSS/Button.css" rel="stylesheet" />
+   
+
+   <%-- <script src="http://code.jquery.com/jquery.1.8.2.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+       
+<script src="JS/jquery.min.js"></script>--%>
+    
+    <asp:ContentPlaceHolder ID="Head" runat="server">
+     
+    </asp:ContentPlaceHolder>
+</head>
+  
+
+<body>
+     
+   
+    <form id="form1" runat="server">
+      
+        <div >
+    <ul id="menu">
+       <%-- <li><img src="Image/Flex.png" /></li>--%>
+    <li><a href="Menu.aspx">Home</a></li>
+    <li>
+        <a href="#">Master</a>
+        <ul>
+            <li><a href="EmployeeDetails.aspx">Employee Details</a></li>
+           
+                 <li><a href="AllMaster.aspx">Main Master Details</a></li>
+        </ul>
+
+    </li>
+         <li>
+             <a href="#"> Induction </a>
+             <ul>
+            
+            <li><a href="DLInduction.aspx">DL Induction Details</a></li>
+            <li><a href="IDLInduction.aspx">IDL Induction Details</a></li>
+            
+        </ul>
+
+         </li>
+         <li>
+             <a href="#"> Training </a>
+             <ul>
+            <li><a href="TrainingDetails.aspx">IDL & DL Training Details</a></li>
+             <li><a href="TrainingDataAllEmp.aspx">Bulk Training Details</a></li>
+         
+        </ul>
+
+         </li>
+         <li>
+             <a href="#"> OJT </a>
+             <ul>
+            
+          
+             <li><a href="OJT.aspx">OJT Details</a></li>
+                   <li><a href="JobCardMaster.aspx">Job Card Master Details</a></li>
+                    <li><a href="OJTDelete.aspx">Delete OJT Details  </a></li>
+        </ul>
+
+         </li>
+    <li><a href="#">Reports</a>
+
+         <ul>
+            <li><a href="EmpMasterRep.aspx">Employee Details Report</a></li>
+             <li><a href="DLIndRep.aspx">DL Induction Report</a></li>
+              <li><a href="IDLRep.aspx">IDL Induction Report</a></li>
+             <li><a href="TrainingRep.aspx">Training Report</a></li>
+              <li><a href="OJTRep.aspx">OJT Report</a></li>
+              <li><a href="JobCardMasterRep.aspx">Job Card Master Report</a></li>
+                <li><a href="http://srint057/Reports_SQLFFH01/Pages/Report.aspx?ItemPath=%2fContractDLReports%2fOJTTraining%2fSkillHeadCountReports">SkillSet Report</a></li>
+             
+         </ul>
+    </li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="Login.aspx">Logout</a></li>
+        <li><div id="clockbox" style="text-align: center;"></div></li>
+</ul>
+</div>
+      
+        <div class="clear">
+
+           <%-- <img src="Image/Welcome.jpg" style="text-align: center" /></div>--%>
+       
+  
+        <asp:ContentPlaceHolder ID="Body" runat="server" >
+      
+        
+        
+        </asp:ContentPlaceHolder>
+            <br /><br /><br /><br /> <br />
+          <div class="content" >
+          <div style="text-align: center">
+       <%-- <img src="Image/Training1.jpg"   style="text-align: center;opacity: 0.5;filter: alpha(opacity=50)"  />--%>
+   </div>
+    </div>
+      
+           <div class="clear"></div>
+           
+        <div class="Footer">
+        © 2016 Flextronics Technologies India Pvt. ltd. chennai
+    </div>
+    </form>
+</body>
+</html>
